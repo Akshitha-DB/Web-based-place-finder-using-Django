@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+% load crispy_fprm_tags %
+{% block title %}
+Calculate distance
+{% endblock title %}
+
+{% block content %}
+{{distance}}
+
+<br>
+
+<form action="" method="POST" autocomplete="off">
+         csrf_token 
+        {{form}}
+        <button type="submit" class="btn btn-primary"> Confirm</button>
+    </form>
+{% endblock content %}
